@@ -14,29 +14,20 @@ const Starships = () => {
     fetchStarshipsData()
   }, [])
 
-  
+
   return (
     <>
       <div>
-        <h3>Class List</h3>
+        <h3>Starships</h3>
         <div className="icon-container">
-          {/**
-						* This is where we map over our results, representing
-						* each with a div containing an image and a name
-					*/}
-          {classes.map(classTitle =>
+          {starships.map((starshipName, index) =>
             <Link
-              key={classTitle.index}
-              to='/class'
-              state={{ classTitle }}
+              key={index}
+              to='/starship'
+              state={{ starshipName }}
             >
               <div className="class-div">
-                <img
-                  style={{ width: "100px", height: "100px" }}
-                  src={`/images/${classTitle.name}.svg`}
-                  alt="class-logo"
-                />
-                {classTitle.name}
+                {starshipName.name}
               </div>
             </Link>
           )}
