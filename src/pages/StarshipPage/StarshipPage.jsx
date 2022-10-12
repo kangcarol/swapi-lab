@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useLocation } from "react-router-dom"
 import { getDetails } from "../../services/api-calls"
+import { Link } from "react-router-dom"
 
 const StarshipPage = () => {
   const [starshipPage, setStarshipPage] = useState({})
@@ -22,8 +23,8 @@ const StarshipPage = () => {
         {starshipPage.name ?
         <>
           <h2>NAME: {starshipPage.name}</h2>
-          <div>MODEL: {starshipPage.name}</div>
-          <div>MODEL: {starshipPage.model}</div>
+          <h2>MODEL: {starshipPage.model}</h2>
+          <Link to='/'>RETURN</Link>
         </>
         :
         <>
@@ -34,4 +35,4 @@ const StarshipPage = () => {
   )
 }
 
-export default StarshipPage;
+export default StarshipPage
