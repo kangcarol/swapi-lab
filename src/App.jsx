@@ -2,11 +2,12 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Starships from './pages/Starships/Starships'
 import StarshipPage from './pages/StarshipPage/StarshipPage'
+import NavBar from './components/Nav/Nav'
 
 function App() {
   return (
     <>
-      <h1>STARWARS STARSHIP</h1>
+      <NavBar />
       <Routes>
         <Route path='/' element={<Starships />} />
         <Route path='/starship' element={<StarshipPage />} />

@@ -19,12 +19,14 @@ const StarshipPage = () => {
 
   return (
     <>
-      <div className="indiv-starship">
+      <div className='outside-indiv'>
         {starshipPage.name ?
         <>
+        <div className="indiv-starship">
           <h2>NAME: {starshipPage.name}</h2>
           <h2>MODEL: {starshipPage.model}</h2>
           <Link className='App-link' to='/'>RETURN</Link>
+        </div>
         </>
         :
         <>
