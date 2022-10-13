@@ -1,3 +1,10 @@
+body {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .App {
   text-align: center;
 }
@@ -5,27 +12,52 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: clamp(400px, 80vw, 1200px);
+  margin: auto;
+  justify-content: flex-start;
+}
+
+.class-div {
+  border-radius: 4px;
+  background-color: rgb(37, 81,80);
+  color: white;
+  width: 125px;
+  height: 70px;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
+  padding: 15px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #b3ccff;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +67,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.indiv-starship {
+  border-radius: 4px;
+  background-color: rgb(37, 81,80);
+  color: white;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  justify-items: left;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 10px;
+
+}
+
+h2 {
+  margin: 10px;
+  text-align: left;
 }
