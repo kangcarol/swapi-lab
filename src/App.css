@@ -48,6 +48,7 @@ body {
   background-color:black;
   color: white;
   max-height: 2vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
